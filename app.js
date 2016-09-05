@@ -12,7 +12,7 @@ var app = express();
 
 var PORT = process.env.PORT || 3000;
 
-var app.set('port', 80);
+app.set('port', 80);
 
 console.log("process.env.Port " + PORT);
 // console.log("Express server listening on port %d", app.address().port)
