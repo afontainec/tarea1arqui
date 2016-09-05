@@ -12,6 +12,9 @@ var app = express();
 
 var PORT = process.env.PORT || 3000;
 
+console.log("process.env.Port " + PORT);
+// console.log("Express server listening on port %d", app.address().port)
+
 // app.listen(PORT, () => {
 //   console.log(`App listening on port ${PORT}!`);
 // });
