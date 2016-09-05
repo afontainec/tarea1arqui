@@ -7,8 +7,7 @@ var visitController = require("../controllers/visitController");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render(path.join(__dirname, '../', 'views', 'test.ejs'), { });
-  //visitController.newVisit(req, res, next);
+  visitController.newVisit(req, res, next);
 });
 
 
