@@ -10,16 +10,9 @@ var users = require('./routes/users');
 
 var app = express();
 
-var PORT = process.env.PORT || 3000;
 
 app.set('port', 80);
-
-console.log("process.env.Port " + PORT);
-// console.log("Express server listening on port %d", app.address().port)
-
-// app.listen(PORT, () => {
-//   console.log(`App listening on port ${PORT}!`);
-// });
+app.listen(app.get('port'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
